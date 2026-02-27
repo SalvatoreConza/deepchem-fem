@@ -1,4 +1,4 @@
-# Differentiable Finite Element Method in DeepChem
+# 📐 Differentiable Finite Element Method in DeepChem
 
 **GSoC Proposal — Differentiable FEM/FVM**
 
