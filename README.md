@@ -1,9 +1,8 @@
-# 📐 Differentiable Finite Element Method in DeepChem
+# Differentiable Finite Element Method in DeepChem
 
 **GSoC Proposal — Differentiable FEM/FVM**
 
-An end-to-end differentiable 2D FEM solver in PyTorch, integrated with DeepChem's `TorchModel` and `NumpyDataset` abstractions.      
-I suggest to look to the python notebook.
+An end-to-end differentiable 2D FEM solver in PyTorch, integrated with DeepChem's `TorchModel` and `NumpyDataset` abstractions.
 
 ## Features
 
@@ -13,6 +12,30 @@ I suggest to look to the python notebook.
 4. A `DifferentiableFEMModel` that subclasses `dc.models.TorchModel`
 5. Benchmarks against `scipy.sparse.linalg.spsolve` (accuracy + timing)
 6. An h-convergence study confirming O(h²) for P1 elements
+
+## Results
+
+### Triangular Mesh (4×4 grid)
+
+<p align="center">
+  <img src="images/mesh_4x4.png" width="400" alt="4x4 triangular mesh on the unit square">
+</p>
+
+### Forward Solve — Laplace Equation
+
+FEM solution vs exact solution $u(x,y) = x$ on a 10×10 mesh:
+
+<p align="center">
+  <img src="images/forward_solve.png" width="700" alt="FEM solution vs exact solution for Laplace equation">
+</p>
+
+### h-Convergence Study
+
+Confirms the expected O(h²) convergence rate for P1 triangular elements:
+
+<p align="center">
+  <img src="images/convergence.png" width="500" alt="h-convergence study showing O(h²) rate">
+</p>
 
 ## Installation
 
