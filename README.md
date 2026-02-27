@@ -2,7 +2,8 @@
 
 **GSoC Proposal — Differentiable FEM/FVM**
 
-An end-to-end differentiable 2D FEM solver in PyTorch, integrated with DeepChem's `TorchModel` and `NumpyDataset` abstractions.
+An end-to-end differentiable 2D FEM solver in PyTorch, integrated with DeepChem's `TorchModel` and `NumpyDataset` abstractions.      
+I suggest to look to the python notebook.
 
 ## Features
 
